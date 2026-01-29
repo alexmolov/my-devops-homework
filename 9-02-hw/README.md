@@ -30,16 +30,32 @@
 
 <img src = "img/5442956125616673274(2).jpg" width = 100%>
 
+
+Commands from zabbix download configurator https://www.zabbix.com/download?zabbix=6.0&os_distribution=ubuntu&os_version=22.04&components=server_frontend_agent&db=pgsql&ws=apache
 ```
 Поле для вставки кода...
 ....
-....
-....
+
+sudo -s 
+
+# wget https://repo.zabbix.com/zabbix/6.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_latest_6.0+ubuntu22.04_all.deb
+# dpkg -i zabbix-release_latest_6.0+ubuntu22.04_all.deb
+# apt update 
+
+# apt install zabbix-server-pgsql zabbix-frontend-php php8.1-pgsql zabbix-apache-conf zabbix-sql-scripts zabbix-agent
+
+# sudo -u postgres createuser --pwprompt zabbix
+# sudo -u postgres createdb -O zabbix zabbix 
+
+# zcat /usr/share/zabbix-sql-scripts/postgresql/server.sql.gz | sudo -u zabbix psql zabbix 
+
+DBPassword=password
+
+# systemctl restart zabbix-server zabbix-agent apache2
+# systemctl enable zabbix-server zabbix-agent apache2 
+
 ....
 ```
-
-`При необходимости прикрепитe сюда скриншоты
-![Название скриншота 1](ссылка на скриншот 1)`
 
 
 ---
@@ -52,17 +68,23 @@
 
 <img src = "img/5442956125616673276.jpg" width = 100%>
 
+Commands from zabbix download configurator https://www.zabbix.com/download?zabbix=6.0&os_distribution=ubuntu&os_version=22.04&components=agent&db=&ws=
+
+
 ```
 Поле для вставки кода...
 ....
-stages:
-  - build
 
-build:
-  stage: build
-  image: docker:latest
-  script:
-    - docker build ./gitlab
+$ sudo -s 
+
+# wget https://repo.zabbix.com/zabbix/6.0/ubuntu/pool/main/z/zabbix-release/zabbix-release_latest_6.0+ubuntu22.04_all.deb
+# dpkg -i zabbix-release_latest_6.0+ubuntu22.04_all.deb
+# apt update 
+
+ # apt install zabbix-agent
+
+ # systemctl restart zabbix-agent
+# systemctl enable zabbix-agent 
 
 ....
 ```
