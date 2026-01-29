@@ -68,6 +68,8 @@ DBPassword=password
 
 <img src = "img/task_2_3_2.jpg" width = 100%>
 
+<img src = "img/222222.jpg" width = 100%>
+
 Commands from zabbix download configurator https://www.zabbix.com/download?zabbix=6.0&os_distribution=ubuntu&os_version=22.04&components=agent&db=&ws=
 
 
