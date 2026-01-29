@@ -26,9 +26,7 @@
 
 `Приведите ответ в свободной форме........`
 
-<img src = "img/5442956125616673275(2).jpg" width = 100%>
-
-<img src = "img/5442956125616673274(2).jpg" width = 100%>
+<img src = "img/zabbiz web server domanstration.jpg" width = 100%>
 
 
 Commands from zabbix download configurator https://www.zabbix.com/download?zabbix=6.0&os_distribution=ubuntu&os_version=22.04&components=server_frontend_agent&db=pgsql&ws=apache
@@ -64,9 +62,11 @@ DBPassword=password
 
 `Приведите ответ в свободной форме........`
 
-<img src = "img/5442956125616673275(2).jpg" width = 100%>
+<img src = "img/task 2_1.jpg" width = 100%>
 
-<img src = "img/5442956125616673276.jpg" width = 100%>
+<img src = "img/task 2_3_1.jpg" width = 100%>
+
+<img src = "img/task_2_3_2.jpg" width = 100%>
 
 Commands from zabbix download configurator https://www.zabbix.com/download?zabbix=6.0&os_distribution=ubuntu&os_version=22.04&components=agent&db=&ws=
 
