@@ -41,6 +41,7 @@ Master-Master
 2 - Изменения реплицируются в обе стороны
 3 - при падении одного мастера второй продолжает работу, автоматическое восстановление при отказе
 4 - Pozvoliaet raspredeluat nagruzku na zapis
+
 ---
 
 ### Задание 2
@@ -61,7 +62,11 @@ Master-Master
 
 <img src = "img/5.png" width = 100%>
 
+master:
+
 <img src = "img/6.png" width = 100%>
+
+replica:
 
 <img src = "img/7.png" width = 100%>
 
